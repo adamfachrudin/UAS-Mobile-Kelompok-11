@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kelompok 11 - DeepL</string>
+    <string name="translate">Translate</string>
+    <string name="masukkan_api_key">Masukkan API Key</string>
+    <string name="masukkan_api_key_untuk_melihat_usage">Masukkan API Key untuk melihat usage</string>
+    <string name="deepl_api_key">DeepL API Key</string>
+    <string name="type_to_translate">Type to translate...</string>
+    <string name="usage">Usage</string>
+</resources>
