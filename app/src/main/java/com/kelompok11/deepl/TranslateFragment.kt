@@ -24,6 +24,7 @@ class TranslateFragment : Fragment() {
         var languages = hashMapOf<String, String>()
         var languagesArraySource = arrayOf<String>()
         var languagesArrayTarget = arrayOf<String>()
+        var isLanguagesLoaded = false
     }
 
     private var deepLKey = "cb654b32-c4c6-4f37-bfa7-6225263d6217:fx"
@@ -45,7 +46,13 @@ class TranslateFragment : Fragment() {
 
         confTextZone(view)
         loadPreferences()
-        loadLanguages {
+
+        if (!isLanguagesLoaded) {
+            loadLanguages {
+                confSpinners(view)
+                isLanguagesLoaded = true
+            }
+        } else {
             confSpinners(view)
         }
 
